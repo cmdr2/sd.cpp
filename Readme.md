@@ -1,4 +1,4 @@
-Experiments with compiling [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) with a simple C++ program.
+Experiments with compiling [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) along with a simple C++ wrapper program.
 
 It's obviously better to use the pre-built sd.cpp libraries (from their releases page), loaded as a dynamic library. This experiment was purely to try compiling sd.cpp from scratch, as a sub-module of a project.
 

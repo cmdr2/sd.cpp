@@ -53,6 +53,7 @@ int main(int argc, char* argv[]) {
     const char* model_path = "F:\\models\\stable-diffusion\\sd-v1-5.safetensors";
     // const char* model_path = "F:\\ED4\\server\\miniSD.ckpt";
     const char* clip_l_path = "";
+    const char* clip_g_path = "";
     const char* t5xxl_path = "";
     const char* diffusion_model_path = "";
     const char* vae_path = "";
@@ -63,7 +64,7 @@ int main(int argc, char* argv[]) {
     const char* stacked_id_embed_dir = "";
 
     // Create the Stable Diffusion context
-    sd_ctx_t* ctx = new_sd_ctx(model_path, clip_l_path, t5xxl_path, diffusion_model_path,
+    sd_ctx_t* ctx = new_sd_ctx(model_path, clip_l_path, clip_g_path, t5xxl_path, diffusion_model_path,
                                vae_path, taesd_path, control_net_path, lora_model_dir,
                                embed_dir, stacked_id_embed_dir, false, false, false,
                                -1, SD_TYPE_F16, STD_DEFAULT_RNG, DEFAULT, false, false, false);
